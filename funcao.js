@@ -134,3 +134,35 @@ function exe7 () {
         alert ("Sem direito a aumento")
     }
 }
+function exe22 (){
+    //recuperar dados
+    var peso = Number(document.getElementById("peso1").value);
+    var idade = Number(document.getElementById("idade1").value);
+    if ((idade < 20) && (peso <= 60)){
+        alert("Grupo de risco 9")
+    }
+    else if ((idade < 20) && (peso > 60) && (peso <= 90)){
+        alert("Grupo de risco 8")
+    }
+    else if ((idade < 20) && (peso > 90)){
+        alert("Grupo de risco 7")
+    }
+    else if ((idade >= 20) && (peso <= 60) &&(idade < 50)){
+        alert("Grupo de risco 6")
+    }
+    else if ((idade >= 20) && (peso > 60) && (peso <= 90)&&(idade < 50)){
+        alert("Grupo de risco 5")
+    }
+    else if ((idade >= 20) && (peso > 90) &&(idade < 50)){
+        alert("Grupo de risco 4")
+    }
+    else if ((idade > 50) && (peso <= 60)){
+        alert("Grupo de risco 3")
+    }
+    else if ((idade > 50) && (peso > 60) && (peso <= 90)){
+        alert("Grupo de risco 2")
+    }
+    else if ((idade > 50) && (peso > 90)){
+        alert("Grupo de risco 1")
+    }
+}
